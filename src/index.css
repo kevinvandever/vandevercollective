@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #19334A;
+  --secondary: #568097;
+  --accent: #C84824;
+  --background: #F1F7FB;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  color: var(--primary);
+  background-color: var(--background);
+}
