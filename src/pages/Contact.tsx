@@ -1,7 +1,12 @@
 import React, { useState } from 'react';
+import emailjs from '@emailjs/browser';
 import { Mail, Phone, MapPin, Send, MessageSquare } from 'lucide-react';
 import { validateContactForm } from '../utils/contact';
 import { ContactFormData, ContactFormErrors } from '../types';
+
+const EMAILJS_SERVICE_ID = 'service_k4s9haft';
+const EMAILJS_TEMPLATE_ID = 'template_a7pbhkg';
+const EMAILJS_PUBLIC_KEY = 'HazlwmLrAGiEC6vdI';
 
 export default function Contact() {
   const [formData, setFormData] = useState<ContactFormData>({
@@ -11,6 +16,8 @@ export default function Contact() {
   });
   const [errors, setErrors] = useState<ContactFormErrors>({});
   const [submitted, setSubmitted] = useState(false);
+  const [sending, setSending] = useState(false);
+  const [sendError, setSendError] = useState('');
 
   const handleChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -22,7 +29,7 @@ export default function Contact() {
     }
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     const validationErrors = validateContactForm(formData);
     if (Object.keys(validationErrors).length > 0) {
@@ -30,7 +37,26 @@ export default function Contact() {
       return;
     }
     setErrors({});
-    setSubmitted(true);
+    setSending(true);
+    setSendError('');
+
+    try {
+      await emailjs.send(
+        EMAILJS_SERVICE_ID,
+        EMAILJS_TEMPLATE_ID,
+        {
+          from_name: formData.name,
+          from_email: formData.email,
+          message: formData.message,
+        },
+        EMAILJS_PUBLIC_KEY
+      );
+      setSubmitted(true);
+    } catch {
+      setSendError('Failed to send message. Please try again or email us directly.');
+    } finally {
+      setSending(false);
+    }
   };
 
   return (
@@ -158,12 +184,16 @@ export default function Contact() {
                       </p>
                     )}
                   </div>
+                  {sendError && (
+                    <p className="mb-4 text-sm text-accent">{sendError}</p>
+                  )}
                   <button
                     type="submit"
-                    className="inline-flex items-center gap-2 bg-accent text-white font-semibold px-8 py-3 rounded-lg hover:bg-accent/90 transition-colors"
+                    disabled={sending}
+                    className="inline-flex items-center gap-2 bg-accent text-white font-semibold px-8 py-3 rounded-lg hover:bg-accent/90 transition-colors disabled:opacity-60 disabled:cursor-not-allowed"
                   >
                     <Send size={18} />
-                    Send Message
+                    {sending ? 'Sending...' : 'Send Message'}
                   </button>
                 </form>
               )}
