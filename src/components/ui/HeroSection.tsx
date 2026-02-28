@@ -4,25 +4,26 @@ import { ArrowRight } from 'lucide-react';
 
 export default function HeroSection() {
   return (
-    <section className="bg-[#19334A] text-white py-20">
-      <div className="container mx-auto px-4">
-        <div className="max-w-3xl">
-          <h1 className="text-5xl font-bold mb-6">Experience the Power of AI</h1>
-          <p className="text-xl mb-8 text-[#F1F7FB] leading-relaxed">
-            In the rapidly evolving world of Generative AI, staying ahead of the curve can be difficult. 
-            That's where we come in. As certified MindStudio AI developers/experts with many years of 
-            consulting, mentoring, writing, and technical presentation experience, we can help you 
-            navigate the complexities of this exciting field. Whether you need help building an AI 
-            system or want to learn more about how AI can benefit your business, we are here to provide 
-            the guidance and leadership you need. Don't hesitate—get in touch today.
+    <section className="bg-gradient-to-br from-navy to-teal text-white py-24 md:py-32">
+      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="max-w-3xl flex flex-col gap-6">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight">
+            AI Solutions That Drive Results
+          </h1>
+          <p className="text-lg sm:text-xl text-background/90 leading-relaxed max-w-2xl">
+            Certified MindStudio experts helping you build, automate, and scale
+            with AI. From custom tools to hands-on training, we turn complexity
+            into clarity.
           </p>
-          <Link
-            to="/contact"
-            className="inline-flex items-center bg-[#C84824] text-white px-6 py-3 rounded-lg hover:bg-opacity-90 transition-colors"
-          >
-            Get Started
-            <ArrowRight className="ml-2" size={20} />
-          </Link>
+          <div>
+            <Link
+              to="/contact"
+              className="inline-flex items-center bg-accent text-white px-8 py-3.5 rounded-lg text-lg font-medium hover:bg-accent/90 transition-colors"
+            >
+              Get Started
+              <ArrowRight className="ml-2" size={20} />
+            </Link>
+          </div>
         </div>
       </div>
     </section>

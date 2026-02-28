@@ -7,6 +7,7 @@ import About from './pages/About';
 import Solutions from './pages/Solutions';
 import Training from './pages/Training';
 import Contact from './pages/Contact';
+import MindStudioLinks from './pages/MindStudioLinks';
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
             <Route path="/solutions" element={<Solutions />} />
             <Route path="/training" element={<Training />} />
             <Route path="/contact" element={<Contact />} />
+            <Route path="/mindstudio-tools" element={<MindStudioLinks />} />
           </Routes>
         </main>
         <Footer />

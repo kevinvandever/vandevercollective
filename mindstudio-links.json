@@ -1,0 +1,38 @@
+[
+  {
+    "name": "AI Content Writer",
+    "description": "Generate blog posts, social media content, and marketing copy with AI assistance.",
+    "url": "https://app.mindstudio.ai/tool/ai-content-writer",
+    "category": "Content Creation"
+  },
+  {
+    "name": "Social Media Scheduler",
+    "description": "Plan and automate your social media calendar using AI-driven content suggestions.",
+    "url": "https://app.mindstudio.ai/tool/social-media-scheduler",
+    "category": "Content Creation"
+  },
+  {
+    "name": "Workflow Optimizer",
+    "description": "Analyze and optimize your business workflows using AI-powered recommendations.",
+    "url": "https://app.mindstudio.ai/tool/workflow-optimizer",
+    "category": "Productivity"
+  },
+  {
+    "name": "Meeting Summarizer",
+    "description": "Automatically generate concise meeting notes and action items from transcripts.",
+    "url": "https://app.mindstudio.ai/tool/meeting-summarizer",
+    "category": "Productivity"
+  },
+  {
+    "name": "Customer Insights Dashboard",
+    "description": "Aggregate and visualize customer feedback trends with AI-powered sentiment analysis.",
+    "url": "https://app.mindstudio.ai/tool/customer-insights",
+    "category": "Analytics"
+  },
+  {
+    "name": "Support Ticket Classifier",
+    "description": "Automatically categorize and prioritize incoming support tickets using natural language processing.",
+    "url": "https://app.mindstudio.ai/tool/ticket-classifier",
+    "category": "Customer Support"
+  }
+]
