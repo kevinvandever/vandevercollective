@@ -8,7 +8,7 @@ export default function HeroSection() {
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="max-w-3xl flex flex-col gap-6">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold leading-tight tracking-tight">
-            AI Solutions That Drive Results
+            Let's Make AI Work for You
           </h1>
           <p className="text-lg sm:text-xl text-background/90 leading-relaxed max-w-2xl">
             Certified MindStudio experts helping you build, automate, and scale

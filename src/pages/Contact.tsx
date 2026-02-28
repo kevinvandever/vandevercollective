@@ -213,7 +213,7 @@ export default function Contact() {
                 <Mail className="text-accent mt-1 shrink-0" size={24} />
                 <div>
                   <h3 className="font-semibold text-navy">Email</h3>
-                  <p className="text-teal">hello@vandevercollective.com</p>
+                  <p className="text-teal"><a href="mailto:hello@vandevercollective.com" className="hover:text-accent transition-colors">hello@vandevercollective.com</a></p>
                 </div>
               </div>
               <div className="bg-white rounded-xl p-6 shadow-sm flex items-start gap-4">
