@@ -4,7 +4,7 @@ import { Mail, Phone, MapPin, Send, MessageSquare } from 'lucide-react';
 import { validateContactForm } from '../utils/contact';
 import { ContactFormData, ContactFormErrors } from '../types';
 
-const EMAILJS_SERVICE_ID = 'service_k4s9haft';
+const EMAILJS_SERVICE_ID = 'service_k4s9haf';
 const EMAILJS_TEMPLATE_ID = 'template_a7pbhkg';
 const EMAILJS_PUBLIC_KEY = 'HazlwmLrAGiEC6vdI';
 
