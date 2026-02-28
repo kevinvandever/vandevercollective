@@ -45,9 +45,10 @@ export default function Contact() {
         EMAILJS_SERVICE_ID,
         EMAILJS_TEMPLATE_ID,
         {
-          from_name: formData.name,
-          from_email: formData.email,
+          name: formData.name,
+          email: formData.email,
           message: formData.message,
+          title: 'New Contact Form Submission',
         },
         EMAILJS_PUBLIC_KEY
       );
