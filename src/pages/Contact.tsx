@@ -53,8 +53,12 @@ export default function Contact() {
         EMAILJS_PUBLIC_KEY
       );
       setSubmitted(true);
-    } catch {
-      setSendError('Failed to send message. Please try again or email us directly.');
+    } catch (err: unknown) {
+      const errorMessage = err instanceof Error ? err.message 
+        : typeof err === 'object' && err !== null && 'text' in err ? String((err as { text: string }).text)
+        : 'Unknown error';
+      console.error('EmailJS error:', err);
+      setSendError(`Failed to send message: ${errorMessage}. Please try again or email us directly.`);
     } finally {
       setSending(false);
     }
