@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Facebook, Twitter, Linkedin, Mail } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Mail } from 'lucide-react';
 
 export default function Footer() {
   return (
@@ -30,14 +30,14 @@ export default function Footer() {
               <a href="#" className="text-background/80 hover:text-accent transition-colors" aria-label="Facebook">
                 <Facebook size={24} />
               </a>
-              <a href="#" className="text-background/80 hover:text-accent transition-colors" aria-label="Twitter">
-                <Twitter size={24} />
+              <a href="https://www.instagram.com/vandever.collective/" target="_blank" rel="noopener noreferrer" className="text-background/80 hover:text-accent transition-colors" aria-label="Instagram">
+                <Instagram size={24} />
               </a>
-              <a href="#" className="text-background/80 hover:text-accent transition-colors" aria-label="LinkedIn">
+              <a href="https://www.linkedin.com/in/kevinvandever/" target="_blank" rel="noopener noreferrer" className="text-background/80 hover:text-accent transition-colors" aria-label="LinkedIn">
                 <Linkedin size={24} />
               </a>
               <a
-                href="mailto:info@vandevercollective.com"
+                href="mailto:hello@vandevercollective.com"
                 className="text-background/80 hover:text-accent transition-colors"
                 aria-label="Email us"
               >
@@ -49,14 +49,6 @@ export default function Footer() {
         <div className="border-t border-teal/30 mt-8 pt-8">
           <div className="flex flex-col md:flex-row items-center justify-between">
             <p className="text-background/70 text-sm">&copy; {new Date().getFullYear()} Vandever Collective. All rights reserved.</p>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              <Link to="/terms" className="text-background/70 hover:text-accent text-sm transition-colors">
-                Terms of Service
-              </Link>
-              <Link to="/privacy" className="text-background/70 hover:text-accent text-sm transition-colors">
-                Privacy Policy
-              </Link>
-            </div>
           </div>
         </div>
       </div>
