@@ -5,7 +5,7 @@ const solutions = [
     icon: Workflow,
     title: 'Workflow Automation',
     description:
-      'Streamline your operations with intelligent automation pipelines that connect your tools, eliminate repetitive tasks, and let your team focus on what matters.',
+      'Streamline your operations with automation that connects your tools, cuts out repetitive tasks, and lets your team focus on the work that matters.',
     benefits: [
       'End-to-end process automation with Make and Zapier',
       'Custom triggers and conditional logic',
@@ -20,18 +20,18 @@ const solutions = [
     benefits: [
       'Tailored MindStudio agents for your use case',
       'Fine-tuned prompts and model selection',
-      'Scalable deployment and maintenance',
+      'Deployment and ongoing maintenance',
     ],
   },
   {
     icon: Plug,
     title: 'Integration Services',
     description:
-      'Connect AI capabilities to your existing tech stack seamlessly. We bridge the gap between your current systems and the AI tools that supercharge them.',
+      'Connect AI to your existing tools without ripping anything out. We make your current systems smarter, not more complicated.',
     benefits: [
       'API design and third-party integrations',
       'Data pipeline setup and orchestration',
-      'Legacy system modernization with AI layers',
+      'Adding AI to older systems without starting over',
     ],
   },
 ];
@@ -53,10 +53,9 @@ export default function Solutions() {
               AI Solutions That Work for You
             </h1>
             <p className="text-lg sm:text-xl text-background/90 leading-relaxed">
-              We help businesses harness the power of AI through practical,
-              results-driven solutions. Whether you need to automate workflows,
-              build custom tools, or integrate AI into your existing systems —
-              we've got you covered.
+              We help businesses put AI to work — automating workflows,
+              building custom tools, and connecting AI to the systems you
+              already use.
             </p>
           </div>
         </div>

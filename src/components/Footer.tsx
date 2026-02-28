@@ -10,7 +10,7 @@ export default function Footer() {
           <div>
             <h3 className="text-xl font-bold mb-4">Vandever Collective</h3>
             <p className="text-background">
-              Empowering businesses through innovative AI solutions and strategic partnerships.
+              We build AI tools, automate workflows, and teach teams how to do it themselves.
             </p>
           </div>
           <div>

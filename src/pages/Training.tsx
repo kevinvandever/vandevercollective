@@ -24,7 +24,7 @@ const programs = [
     icon: BrainCircuit,
     title: 'Advanced AI Workflow Design',
     description:
-      'Take your skills to the next level with multi-step workflows, conditional logic, and integrations that turn simple agents into powerful automation systems.',
+      'Take your skills to the next level with multi-step workflows, conditional logic, and integrations that turn simple agents into real automation.',
     topics: [
       'Multi-step workflow architecture',
       'Conditional branching and error handling',
@@ -150,7 +150,7 @@ export default function Training() {
               <h3 className="text-2xl font-bold">Ready to get started?</h3>
               <p className="text-background/90 leading-relaxed">
                 Whether you're an individual looking to level up or a team
-                preparing for an AI-first future, we'll build a mentorship plan
+                preparing to go all-in on AI, we'll build a mentorship plan
                 that fits. Reach out and let's talk about your goals.
               </p>
               <a

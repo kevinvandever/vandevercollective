@@ -11,7 +11,7 @@ const expertise = [
     icon: Workflow,
     title: 'Workflow Automation',
     description:
-      'Designing intelligent automation pipelines that integrate AI into your existing systems using Make, Zapier, and custom solutions.',
+      'Building automation workflows that plug AI into your existing tools using Make, Zapier, and custom setups.',
   },
   {
     icon: GraduationCap,
@@ -38,12 +38,10 @@ export default function About() {
               Making AI Accessible and Actionable
             </h1>
             <p className="text-lg sm:text-xl text-background/90 leading-relaxed">
-              At Vandever Collective, we believe AI should be a practical tool —
-              not a buzzword. Our mission is to bridge the gap between
-              cutting-edge AI technology and the businesses that need it most. We
-              partner with organizations to build custom AI solutions, automate
-              complex workflows, and train teams to thrive in an AI-driven
-              world.
+              At Vandever Collective, we believe AI should be a practical tool
+              — not a buzzword. We help businesses build custom AI solutions,
+              automate messy workflows, and train their teams to use AI with
+              confidence. No hype, just results.
             </p>
           </div>
         </div>
@@ -57,9 +55,8 @@ export default function About() {
               What We Bring to the Table
             </h2>
             <p className="text-lg text-teal leading-relaxed">
-              Our team combines deep technical expertise with a passion for
-              teaching. We don't just build — we empower you to own your AI
-              journey.
+              Our team knows the tech and knows how to teach it. We don't just
+              build — we make sure you can run things on your own.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

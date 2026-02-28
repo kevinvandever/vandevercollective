@@ -6,19 +6,19 @@ import { Feature } from '../../types';
 const features: Feature[] = [
   {
     title: "Workflow Automation",
-    description: "We design and implement custom AI projects tailored to your needs, seamlessly integrating with platforms like Make and Zapier to optimize and automate your workflows for maximum efficiency.",
+    description: "We build custom AI projects and connect them to tools like Make and Zapier so your team spends less time on repetitive work.",
     link: "/solutions",
     icon: Zap
   },
   {
     title: "Technical Training and Mentorship",
-    description: "Our expert team provides comprehensive training on AI concepts and applications, making complex technology accessible to all audiences while developing and coaching high-performing technical teams.",
+    description: "We teach AI concepts in plain language and coach teams to build and maintain their own tools — no hand-holding required.",
     link: "/training",
     icon: GraduationCap
   },
   {
     title: "Custom AI Tools and Marketplace",
-    description: "Discover our growing collection of AI-powered tools and applications designed for both business and personal use. From productivity enhancers to creative tools, our marketplace offers subscription-based solutions for every need.",
+    description: "Browse our collection of AI tools and apps built for real work — content creation, productivity, and more. Use what fits, skip what doesn't.",
     link: "/solutions",
     icon: Package
   }

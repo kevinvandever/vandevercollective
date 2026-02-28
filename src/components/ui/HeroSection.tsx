@@ -12,8 +12,8 @@ export default function HeroSection() {
           </h1>
           <p className="text-lg sm:text-xl text-background/90 leading-relaxed max-w-2xl">
             Certified MindStudio experts helping you build, automate, and scale
-            with AI. From custom tools to hands-on training, we turn complexity
-            into clarity.
+            with AI. From custom tools to hands-on training, we make AI
+            practical.
           </p>
           <div>
             <Link
